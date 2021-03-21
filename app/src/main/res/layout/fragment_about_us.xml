@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context="CardNotPresent.Home.ui.AboutUs.AboutUsFragment">
+    <!--        -->
+    <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--            android:layout_height="250dp"-->
+    <!--            android:layout_margin="10dp"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:padding="5dp">-->
+
+
+    <!--            <LinearLayout-->
+    <!--                android:background="@drawable/round_search"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_width="180dp"-->
+    <!--                android:orientation="vertical"-->
+    <!--                android:weightSum="5"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="parent">-->
+
+
+    <!--                <ImageView-->
+    <!--                    android:layout_height="0dp"-->
+    <!--                    android:layout_weight="3.5"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:padding="5dp"-->
+    <!--                    android:src="@drawable/cheshmejahan_picture" />-->
+
+    <!--                <TextView-->
+    <!--                    android:gravity="center"-->
+    <!--                    android:layout_height="0dp"-->
+    <!--                    android:layout_weight="1.5"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:padding="5dp"-->
+    <!--                    android:text="علی چشم‌جهان\n مدیر عامل"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--            </LinearLayout>-->
+
+
+    <!--            <LinearLayout-->
+    <!--                android:background="@drawable/round_search"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_width="180dp"-->
+    <!--                android:orientation="vertical"-->
+    <!--                android:weightSum="5"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintRight_toRightOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="parent">-->
+
+
+    <!--                <ImageView-->
+    <!--                    android:layout_height="0dp"-->
+    <!--                    android:layout_weight="3.5"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:padding="5dp"-->
+    <!--                    android:src="@drawable/khamse_picture" />-->
+
+    <!--                <TextView-->
+    <!--                    android:gravity="center"-->
+    <!--                    android:layout_height="0dp"-->
+    <!--                    android:layout_weight="1.5"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:padding="5dp"-->
+    <!--                    android:text="کریم خمسه\nرییس هیات‌مدیره"-->
+    <!--                    android:textStyle="bold" />-->
+
+    <!--            </LinearLayout>-->
+
+
+    <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="@string/about_header_1"
+        android:layout_gravity="center"
+        android:textSize="22sp" />
+
+    <View
+        android:layout_gravity="center"
+        android:layout_width="75dp"
+        android:layout_height="2dp"
+        android:layout_marginRight="10dp"
+        android:background="#BA0909" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#8AD7D7EF"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:justificationMode="inter_word"
+                android:paddingRight="5dp"
+                android:text="@string/about_body_1"
+                android:textColor="#121111"
+                android:textSize="17sp" />
+
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="5dp"
+                android:justificationMode="inter_word"
+                android:paddingRight="5dp"
+                android:text="@string/about_body_2"
+                android:textColor="#121111"
+                android:textSize="17sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/about_body_3"
+                android:textColor="#121111"
+                android:textSize="17sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/about_body_4"
+                android:textColor="#121111"
+                android:textSize="17sp" />
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="35dp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

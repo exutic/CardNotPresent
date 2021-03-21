@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:elevation="8dp"
+    android:padding="8dp"
+    android:layoutDirection="rtl"
+    app:cardBackgroundColor="#CCFFFFFF"
+    app:cardCornerRadius="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/frag_product_transaction_list_name_header"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:text="نام:"
+            android:textSize="14sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/frag_product_transaction_list_name_body"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:gravity="right"
+            android:text="مانیتور"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/frag_product_transaction_list_name_header"
+            app:layout_constraintRight_toLeftOf="@+id/frag_product_transaction_list_name_header"
+            app:layout_constraintTop_toTopOf="@+id/frag_product_transaction_list_name_header" />
+
+        <TextView
+            android:id="@+id/frag_product_transaction_list_pro_code_header"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="کد محصول :"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintRight_toRightOf="@id/frag_product_transaction_list_name_header"
+            app:layout_constraintTop_toBottomOf="@id/frag_product_transaction_list_name_header" />
+        <TextView
+            android:id="@+id/frag_product_transaction_list_pro_code_body"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="254"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/frag_product_transaction_list_pro_code_header"
+            app:layout_constraintRight_toRightOf="@id/frag_product_transaction_list_name_body"
+            app:layout_constraintTop_toTopOf="@+id/frag_product_transaction_list_pro_code_header" />
+
+        <TextView
+            android:id="@+id/frag_product_transaction_amount_header"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="قیمت محصول (ریال) :"
+            android:textSize="14sp"
+            app:layout_constraintRight_toRightOf="@+id/frag_product_transaction_list_pro_code_header"
+            app:layout_constraintTop_toBottomOf="@id/frag_product_transaction_list_pro_code_header" />
+        <TextView
+            android:id="@+id/frag_product_transaction_amount_body"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="12000"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/frag_product_transaction_amount_header"
+            app:layout_constraintRight_toRightOf="@id/frag_product_transaction_list_pro_code_body"
+            app:layout_constraintTop_toTopOf="@+id/frag_product_transaction_amount_header" />
+
+        <TextView
+            android:id="@+id/frag_product_transaction_list_ref_number_header"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="شماره مرجع :"
+            android:textSize="14sp"
+            app:layout_constraintRight_toRightOf="@+id/frag_product_transaction_amount_header"
+            app:layout_constraintTop_toBottomOf="@id/frag_product_transaction_amount_header" />
+        <TextView
+            android:id="@+id/frag_product_transaction_list_ref_number_body"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="041111"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/frag_product_transaction_list_ref_number_header"
+            app:layout_constraintRight_toRightOf="@id/frag_product_transaction_amount_body"
+            app:layout_constraintTop_toTopOf="@+id/frag_product_transaction_list_ref_number_header" />
+
+        <TextView
+            android:id="@+id/frag_product_transaction_list_issue_number_header"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="شماره پیگیری :"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintRight_toRightOf="@+id/frag_product_transaction_list_ref_number_header"
+            app:layout_constraintTop_toBottomOf="@id/frag_product_transaction_list_ref_number_header" />
+        <TextView
+            android:id="@+id/frag_product_transaction_list_issue_number_body"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="10015"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/frag_product_transaction_list_issue_number_header"
+            app:layout_constraintRight_toRightOf="@id/frag_product_transaction_list_ref_number_body"
+            app:layout_constraintTop_toTopOf="@+id/frag_product_transaction_list_issue_number_header" />
+
+        <TextView
+            android:id="@+id/frag_product_transaction_list_transaction_date_header"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="تاریخ تراکنش :"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            app:layout_constraintRight_toRightOf="@+id/frag_product_transaction_list_issue_number_header"
+            app:layout_constraintTop_toBottomOf="@id/frag_product_transaction_list_issue_number_header" />
+        <TextView
+            android:id="@+id/frag_product_transaction_list_transaction_date_body"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="6/8/78"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/frag_product_transaction_list_transaction_date_header"
+            app:layout_constraintRight_toRightOf="@id/frag_product_transaction_list_issue_number_body"
+            app:layout_constraintTop_toTopOf="@+id/frag_product_transaction_list_transaction_date_header" />
+
+        <TextView
+            android:id="@+id/frag_product_transaction_list_transaction_result_header"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="نتیجه تراکنش :"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintRight_toRightOf="@+id/frag_product_transaction_list_transaction_date_header"
+            app:layout_constraintTop_toBottomOf="@id/frag_product_transaction_list_transaction_date_header" />
+        <TextView
+            android:id="@+id/frag_product_transaction_list_transaction_result_body"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="موفق"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/frag_product_transaction_list_transaction_result_header"
+            app:layout_constraintRight_toRightOf="@id/frag_product_transaction_list_transaction_date_body"
+            app:layout_constraintTop_toTopOf="@+id/frag_product_transaction_list_transaction_result_header" />
+
+        <TextView
+            android:id="@+id/frag_product_transaction_list_reciver_number_header"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="شماره پذیرنده :"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            app:layout_constraintRight_toRightOf="@+id/frag_product_transaction_list_transaction_result_header"
+            app:layout_constraintTop_toBottomOf="@id/frag_product_transaction_list_transaction_result_header" />
+        <TextView
+            android:id="@+id/frag_product_transaction_list_reciver_number_body"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="1478"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/frag_product_transaction_list_reciver_number_header"
+            app:layout_constraintRight_toRightOf="@id/frag_product_transaction_list_transaction_result_body"
+            app:layout_constraintTop_toTopOf="@+id/frag_product_transaction_list_reciver_number_header" />
+
+        <TextView
+            android:id="@+id/frag_product_transaction_list_terminal_number_header"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="شماره پایانه :"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            app:layout_constraintRight_toRightOf="@+id/frag_product_transaction_list_reciver_number_header"
+            app:layout_constraintTop_toBottomOf="@id/frag_product_transaction_list_reciver_number_header" />
+        <TextView
+            android:id="@+id/frag_product_transaction_list_terminal_number_body"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="258969"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/frag_product_transaction_list_terminal_number_header"
+            app:layout_constraintRight_toRightOf="@id/frag_product_transaction_list_reciver_number_body"
+            app:layout_constraintTop_toTopOf="@+id/frag_product_transaction_list_terminal_number_header" />
+
+        <TextView
+            android:id="@+id/frag_product_transaction_list_customer_name_header"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="نام مشتری :"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            app:layout_constraintRight_toRightOf="@+id/frag_product_transaction_list_terminal_number_header"
+            app:layout_constraintTop_toBottomOf="@id/frag_product_transaction_list_terminal_number_header" />
+        <TextView
+            android:id="@+id/frag_product_transaction_list_customer_name_body"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="وحید"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/frag_product_transaction_list_customer_name_header"
+            app:layout_constraintRight_toRightOf="@id/frag_product_transaction_list_terminal_number_body"
+            app:layout_constraintTop_toTopOf="@+id/frag_product_transaction_list_customer_name_header" />
+
+        <TextView
+            android:id="@+id/frag_product_transaction_list_customer_phonenumber_header"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="شماره تماس مشتری :"
+            android:textSize="14sp"
+            app:layout_constraintRight_toRightOf="@+id/frag_product_transaction_list_customer_name_header"
+            app:layout_constraintTop_toBottomOf="@id/frag_product_transaction_list_customer_name_header" />
+        <TextView
+            android:id="@+id/frag_product_transaction_list_customer_phonenumber_body"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="09125915744"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/frag_product_transaction_list_customer_phonenumber_header"
+            app:layout_constraintRight_toRightOf="@id/frag_product_transaction_list_customer_name_body"
+            app:layout_constraintTop_toTopOf="@+id/frag_product_transaction_list_customer_phonenumber_header" />
+
+        <TextView
+            android:id="@+id/frag_product_transaction_list_customer_address_header"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="آدرس مشتری :"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            app:layout_constraintRight_toRightOf="@+id/frag_product_transaction_list_customer_phonenumber_header"
+            app:layout_constraintTop_toBottomOf="@id/frag_product_transaction_list_customer_phonenumber_header" />
+        <TextView
+            android:id="@+id/frag_product_transaction_list_customer_address_body"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="مادرید"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/frag_product_transaction_list_customer_address_header"
+            app:layout_constraintRight_toRightOf="@id/frag_product_transaction_list_customer_phonenumber_body"
+            app:layout_constraintTop_toTopOf="@+id/frag_product_transaction_list_customer_address_header" />
+
+        <TextView
+            android:id="@+id/frag_product_transaction_list_code_posti_header"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="کد پستی :"
+            android:textSize="14sp"
+            app:layout_constraintRight_toRightOf="@+id/frag_product_transaction_list_customer_address_header"
+            app:layout_constraintTop_toBottomOf="@id/frag_product_transaction_list_customer_address_header" />
+        <TextView
+            android:id="@+id/frag_product_transaction_list_code_posti_body"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="33554488"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/frag_product_transaction_list_code_posti_header"
+            app:layout_constraintRight_toRightOf="@id/frag_product_transaction_list_customer_address_body"
+            app:layout_constraintTop_toTopOf="@+id/frag_product_transaction_list_code_posti_header" />
+
+        <TextView
+            android:id="@+id/frag_product_transaction_list_payment_company_header"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="شرکت پرداخت :"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            app:layout_constraintRight_toRightOf="@+id/frag_product_transaction_list_code_posti_header"
+            app:layout_constraintTop_toBottomOf="@id/frag_product_transaction_list_code_posti_header" />
+        <TextView
+            android:id="@+id/frag_product_transaction_list_payment_company_body"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="شرکت نوین آرین"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/frag_product_transaction_list_payment_company_header"
+            app:layout_constraintRight_toRightOf="@id/frag_product_transaction_list_code_posti_body"
+            app:layout_constraintTop_toTopOf="@+id/frag_product_transaction_list_payment_company_header" />
+
+        <TextView
+            android:id="@+id/frag_product_transaction_list_payment_link_header"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="لینک پرداخت :"
+            android:textSize="14sp"
+            app:layout_constraintRight_toRightOf="@+id/frag_product_transaction_list_payment_company_header"
+            app:layout_constraintTop_toBottomOf="@id/frag_product_transaction_list_payment_company_header" />
+        <TextView
+            android:id="@+id/frag_product_transaction_list_payment_link_body"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="دارد"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/frag_product_transaction_list_payment_link_header"
+            app:layout_constraintRight_toRightOf="@id/frag_product_transaction_list_payment_company_body"
+            app:layout_constraintTop_toTopOf="@+id/frag_product_transaction_list_payment_link_header" />
+
+        <TextView
+            android:id="@+id/frag_product_transaction_list_description_header"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="توضیحات :"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            app:layout_constraintRight_toRightOf="@+id/frag_product_transaction_list_payment_link_header"
+            app:layout_constraintTop_toBottomOf="@id/frag_product_transaction_list_payment_link_header" />
+
+        <TextView
+            android:id="@+id/frag_product_transaction_list_description_body"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="ارسال دارد"
+            android:textSize="14sp"
+            app:layout_constraintRight_toRightOf="@id/frag_product_transaction_list_payment_link_body"
+            app:layout_constraintTop_toTopOf="@+id/frag_product_transaction_list_description_header" />
+
+
+        <FrameLayout
+            android:id="@+id/frm_item_recycler_product_transaction_list"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:padding="2dp">
+
+            <ImageView
+                android:id="@+id/img_share_item_recycler_product_transaction_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:src="@drawable/share_icon"/>
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btn_expand_item_recycler_product_transaction_list"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_keyboard_arrow_down_black_24dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintLeft_toLeftOf="@+id/frm_item_recycler_product_transaction_list"
+            app:layout_constraintTop_toBottomOf="@+id/frm_item_recycler_product_transaction_list"
+            app:layout_constraintRight_toRightOf="@+id/frm_item_recycler_product_transaction_list"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="19dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/frag_product_transaction_list_description_body" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

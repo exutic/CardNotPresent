@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">178.252.189.82</domain>
+        <domain includeSubdomains="true">http://178.252.189.82:8096</domain>
+        <domain includeSubdomains="true">https://178.252.189.82:8096</domain>
+        <domain includeSubdomains="true">https://bcard.totanservice.com</domain>
+
+        <base-config>
+            <trust-anchors>
+                <certificates src="system" />
+            </trust-anchors>
+        </base-config>
+
+    </domain-config>
+</network-security-config>

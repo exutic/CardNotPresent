@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:background="@drawable/background_main"
+    tools:context="CardNotPresent.Home.ui.Profile.ProfileFragmentView">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/frag_profile_cardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="8dp"
+        android:orientation="vertical"
+        app:cardBackgroundColor="#00FFFFFF"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:id="@+id/frag_ll_temp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_button_1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/frag_profile_img_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:src="@drawable/profile_icon_white" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/frag_profile_txt_full_name_header"
+                    style="@style/txt_item_header"
+                    android:text="نام نام خانوادگی:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/frag_ll_temp" />
+
+                <TextView
+                    android:id="@+id/frag_profile_txt_full_name_body"
+                    style="@style/txt_item_body"
+                    android:text=""
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/frag_profile_txt_full_name_header" />
+
+                <TextView
+                    android:id="@+id/frag_profile_txt_national_id__header"
+                    style="@style/txt_item_header"
+                    android:text="کد ملی:"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/frag_profile_txt_full_name_body" />
+
+                <TextView
+                    android:id="@+id/frag_profile_txt_national_id__body"
+                    style="@style/txt_item_body"
+                    android:text=""
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/frag_profile_txt_national_id__header" />
+
+                <TextView
+                    android:id="@+id/frag_profile_txt_phone_number__header"
+                    style="@style/txt_item_header"
+                    android:text="تلفن همراه:"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/frag_profile_txt_national_id__body" />
+
+                <TextView
+                    android:id="@+id/frag_profile_txt_phone_number__body"
+                    style="@style/txt_item_body"
+                    android:text=""
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/frag_profile_txt_phone_number__header" />
+
+                <TextView
+                    android:id="@+id/frag_profile_txt_home_phone__header"
+                    style="@style/txt_item_header"
+                    android:text="تلفن ثابت:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/frag_profile_txt_phone_number__body" />
+
+                <TextView
+                    android:id="@+id/frag_profile_txt_home_phone_body"
+                    style="@style/txt_item_body"
+                    android:text=""
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/frag_profile_txt_home_phone__header" />
+
+                <TextView
+                    android:id="@+id/frag_profile_txt_email_header"
+                    style="@style/txt_item_header"
+                    android:text="پست الکترونیک:"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/frag_profile_txt_home_phone_body" />
+
+                <TextView
+                    android:id="@+id/frag_profile_txt_email_body"
+                    style="@style/txt_item_body"
+                    android:text=""
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/frag_profile_txt_email_header" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/frag_profile_txt_company_code_header"
+                    style="@style/txt_item_header"
+                    android:text="شناسه ملی شرکت پذیرنده:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/frag_profile_txt_email_body" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/frag_profile_txt_company_code_body"
+                    style="@style/txt_item_body"
+                    android:text=""
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/frag_profile_txt_company_code_header" />
+
+                <TextView
+                    android:id="@+id/frag_profile_txt_address_header"
+                    style="@style/txt_item_header"
+                    android:text="آدرس:"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/frag_profile_txt_company_code_body" />
+
+                <TextView
+                    android:id="@+id/frag_profile_txt_address_body"
+                    style="@style/txt_item_body_h_wrap"
+                    android:text=""
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/frag_profile_txt_address_header" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/frag_profile_txt_address_body" />
+
+                <LinearLayout
+                    android:id="@+id/frag_profile_include__waiting_dialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="200dp"
+                    android:background="@drawable/loading_background"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:visibility="gone">
+
+                    <include layout="@layout/alert_waiting" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/frag_profile_btn_refresh"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/icon_refresh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

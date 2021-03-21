@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">توکا پی</string>
+
+
+    <string name="app_version">Version: 990220.01.01M α</string>
+
+
+    <string name="welcome_title_main_page">توکا پی</string>
+    <string name="welcome_note_main_page"> به سامانه مدیریت پرداخت در صفحه های\n اجتماعی خوش آمدید</string>
+
+    <string name="username_mmain_page">Username ( نام کاربری )</string>
+    <string name="password_main_page">Password ( رمز عبور )</string>
+
+    <string name="portal_entrance_title">ورود</string>
+    <string name="portal_entrance_button">ورود</string>
+    <string name="portal_sign_up">ثبت نام</string>
+    <string name="forget_password">بازیابی رمز عبور</string>
+    <string name="close_login_page">بازگشت</string>
+    <string name="title_activity_home_panel">HomePanel</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">خانه</string>
+    <string name="menu_profile">پروفایل</string>
+    <string name="menu_change_pin">تغییر رمز</string>
+    <string name="menu_contact_us">تماس با ما</string>
+    <string name="menu_about_us">در باره ما</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="permission_validator_toast">Settings/App/جام جم/Permissions/</string>
+
+    <string name="about_header_1">گروه توتان</string>
+    <string name="about_body_1">توکا پی یک اپلیکشن از گروه توتان است. توکا و توکان
+                                نام تیره‌ای از انواع پرندگان است که نژادهای گوناگون
+                                و مختلفی دارند. این دو پرنده با اینکه اسم‌های متفاوتی
+                                دارند معمولا با هم اشتباه گرفته شده و تحت یک
+                                نام از آن ها نام برده می شود. توکا در ادبیات ایرانی
+                                نماد فال نیک و سعادت است.</string>
+
+    <string name="about_body_2">توتان نام یک روستا در استان زیبای سیستان و بلوچستان است
+                                اما برای ما به معنای «توسعه و تحقق ایده‌های نوین» است.
+                                در توتان همواره سعی داریم ایده‌های نوین را توسعه و تحقق
+        بخشیم و باور داریم:                        </string>
+
+    <string name="about_body_3">خلق خود از درون چون جان زندگی است</string>
+
+    <string name="about_body_4">هر روز نو شدن پیمان زندگی است</string>
+
+    <string name="about_body_5">www.totangroup.com</string>
+
+
+    <string name="contact_us_main_header">نشانی</string>
+    <string name="contact_us_header_1">دفتر مرکزی</string>
+    <string name="contact_us_body_1">آدرس: تهران، خیابان ولی‌عصر، بالاتر از میدان ولی‌عصر، کوچه شهامتی، پلاک شش، طبقه چهارم\n
+تلفن: ۰۲۱۸۸۹۳۰۴۹۰\n
+فاکس: ۰۲۱۸۸۹۳۰۴۹۰\n
+تلفن خدمات مشتریان: ۰۲۱۸۹۱۲۰۰۰۰\n
+ایمیل: info@totangroup.com\n
+    </string>
+</resources>

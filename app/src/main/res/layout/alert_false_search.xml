@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:background="#2AFFFFFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/alert_false_search_tv_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        android:textColor="#EE1C27"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="پیداش نکردم!"
+        />
+
+    <LinearLayout
+        android:id="@+id/alert_search_false_linear"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="30dp"
+        android:weightSum="2"
+        android:padding="4dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alert_false_search_tv_header">
+
+        <Button
+            android:id="@+id/alert_false_search_btn_homepage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#fff"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_order_submit_btn"
+            android:text="صفحه اول"
+            />
+        <Button
+            android:id="@+id/alert_false_search_btn_show_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="صفحه جستجو"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:background="@drawable/round_order_submit_btn"
+            />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/alert_false_search_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alert_search_false_linear"
+        android:layout_marginTop="30dp"
+        android:textColor="#040F4A"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:text="زبان گوشیت رو بررسی کن"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alert_false_search_tv"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

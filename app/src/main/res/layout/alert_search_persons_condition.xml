@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    android:layoutDirection="rtl">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/tv_header_alert_person_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="وضعیت تسویه تراکنش های ارسالی"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_closedialog_search_person_link"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/close_dialog"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="شخص"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/edt_name_search_person_condition"
+            style="@style/edt_item_search"
+            android:background="@drawable/round_search"
+            android:hint="نام"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLength="20" />
+
+        <EditText
+            android:id="@+id/edt_family_search_person_condition"
+            style="@style/edt_item_search"
+            android:hint="نام خانوادگی"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLength="25"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/edt_national_code_search_person_condition"
+            style="@style/edt_item_search"
+            android:hint="کدملی"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="10"
+            android:maxLines="1" />
+
+
+        <EditText
+            android:id="@+id/edt_mobile_number_search_person_condition"
+            style="@style/edt_item_search"
+            android:hint="شماره تلفن"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="10"
+            android:maxLines="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="مشخصات تراکنش"
+            android:textSize="19sp"
+            android:textStyle="bold"
+
+            />
+
+        <EditText
+            android:id="@+id/edt_merchant_id_search_person_condition"
+            style="@style/edt_item_search"
+            android:hint="شماره پذیرنده"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="15"
+            android:maxLines="1" />
+
+
+        <EditText
+            android:id="@+id/edt_terminal_id_search_person_condition"
+            style="@style/edt_item_search"
+            android:hint="شماره پایانه"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="15"
+            android:maxLines="1" />
+
+
+        <EditText
+            android:id="@+id/edt_ref_num_search_person_condition"
+            style="@style/edt_item_search"
+            android:hint="شماره مرجع"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="10"
+            android:maxLines="1" />
+
+
+        <EditText
+            android:id="@+id/edt_res_num_search_person_condition"
+            style="@style/edt_item_search"
+            android:hint="شماره پیگیری"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="10"
+            android:maxLines="1" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/round_search"
+            android:layout_margin="10dp"
+            android:layout_height="170dp">
+
+
+            <TextView
+                android:id="@+id/edt_transaction_status_search_person_condition"
+                android:text="انتخاب نتیجه تراکنش"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:layout_height="50dp"
+                android:layout_width="match_parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_transaction_status_two_result_search_person_condition"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:textColor="#fff"
+                android:background="@drawable/round_search"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:layout_margin="10dp"
+                android:text="تسویه شده و تسویه نشده"
+                />
+
+            <Button
+                android:id="@+id/btn_transaction_status_not_ok_search_person_condition"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:background="@drawable/round_search"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:hint="ناموفق"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                app:layout_constraintLeft_toLeftOf="@+id/btn_transaction_status_two_result_search_person_condition"
+                app:layout_constraintRight_toLeftOf="@+id/btn_transaction_status_ok_search_person_condition"
+                app:layout_constraintBottom_toTopOf="@+id/btn_transaction_status_two_result_search_person_condition"/>
+
+            <Button
+                android:id="@+id/btn_transaction_status_ok_search_person_condition"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:background="@drawable/round_search"
+                android:gravity="center"
+                android:hint="موفق"
+                android:textColor="#fff"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="17sp"
+                android:textColorHint="#fff"
+                app:layout_constraintLeft_toRightOf="@+id/btn_transaction_status_not_ok_search_person_condition"
+                app:layout_constraintBottom_toTopOf="@+id/btn_transaction_status_two_result_search_person_condition"
+                app:layout_constraintRight_toRightOf="@+id/btn_transaction_status_two_result_search_person_condition" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_start_amount_search_person_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/round_search"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:hint="مبلغ پرداخت از"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:textColor="#9A010E30"
+                android:textColorHint="#fff" />
+
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:id="@+id/edt_end_amount_search_person_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/round_search"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:hint="مبلغ پرداخت تا"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:textColor="#9A010E30"
+                android:textColorHint="#fff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_start_date_search_person_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/round_search"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:text="تاریخ تراکنش از"
+                android:textColor="#fff" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btn_end_date_search_person_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/round_search"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:text="تاریخ تراکنش تا"
+                android:textColor="#fff" />
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_submit_search_person_condition"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/round_order_submit_btn"
+            android:text="جستجو"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp" />
+
+    </LinearLayout>
+
+</ScrollView>

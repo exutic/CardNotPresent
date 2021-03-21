@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/actv_home_panel_nav_item_home">
+
+    <fragment
+        android:id="@+id/actv_home_panel_nav_item_home"
+        android:name="CardNotPresent.Home.ui.Home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+<!--        <action-->
+<!--            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"-->
+<!--            app:destination="@id/actv_home_panel_nav_item_home" />-->
+    </fragment>
+
+    <fragment
+        android:id="@+id/actv_home_panel_nav_item_profile"
+        android:name="CardNotPresent.Home.ui.Profile.ProfileFragmentView"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile">
+    </fragment>
+
+    <fragment
+        android:id="@+id/actv_home_panel_nav_item_change_password_link"
+        android:name="CardNotPresent.Home.ui.ChangePin.ChangePasswordFragment"
+        android:label="@string/menu_change_pin"
+        tools:layout="@layout/fragment_change_password" />
+
+    <fragment
+        android:id="@+id/actv_home_panel_nav_item_contact_us_link"
+        android:name="CardNotPresent.Home.ui.ContactUs.ContactUsFragment"
+        android:label="@string/menu_contact_us"
+        tools:layout="@layout/fragment_contact_us" />
+
+    <fragment
+        android:id="@+id/actv_home_panel_nav_item_about_us_link"
+        android:name="CardNotPresent.Home.ui.AboutUs.AboutUsFragment"
+        android:label="@string/menu_about_us"
+        tools:layout="@layout/fragment_about_us" />
+
+</navigation>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_main"
+    android:focusableInTouchMode="true"
+    android:layoutDirection="rtl"
+    tools:context="CardNotPresent.All_AbsentPayment.AbsentPaymentTransaction.LinkFragment">
+
+    <Button
+        android:id="@+id/frag_person_transaction_list_btn_refresh"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/icon_refresh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/frag_person_transaction_list_linear"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/search_background_1"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/frag_person_transaction_search_search"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="4.5"
+            android:background="#00FFFFFF"
+            android:gravity="center"
+            android:text="     جستجو"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/frag_pre_transaction_btn_create_pdf"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/icon_download_1" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/frag_person_transaction_list_recycler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/frag_link_btn_create_link"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_person_transaction_list_linear" />
+
+    <LinearLayout
+        android:id="@+id/frag_person_transList_include__waiting_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="200dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/loading_background"
+
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone">
+
+        <include layout="@layout/alert_waiting" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/frag_link_btn_create_link"
+        android:text="ساخت و ارسال لینک"
+        android:textColor="@android:color/white"
+        android:background="@drawable/round_btn_float_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frag_person_transaction_list_recycler"
+        app:layout_constraintRight_toRightOf="@+id/frag_person_transaction_list_recycler"
+        app:layout_constraintLeft_toLeftOf="@+id/frag_person_transaction_list_recycler"
+        android:layout_width="match_parent"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

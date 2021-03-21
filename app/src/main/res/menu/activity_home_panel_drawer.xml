@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/actv_home_panel_nav_item_home"
+            android:icon="@drawable/icon_home_2"
+            android:title="خانه" />
+        <item
+            android:id="@+id/actv_home_panel_nav_item_profile"
+            android:icon="@drawable/icon_profile"
+            android:title="پروفایل" />
+        <item
+            android:id="@+id/actv_home_panel_nav_item_change_password_link"
+            android:icon="@drawable/icon_change_pin"
+            android:title="تنظیمات" />
+        <item
+            android:id="@+id/actv_home_panel_nav_item_contact_us_link"
+            android:icon="@drawable/icon_contact_us"
+            android:title="تماس با ما" />
+        <item
+            android:id="@+id/actv_home_panel_nav_item_about_us_link"
+            android:icon="@drawable/icon_about"
+            android:title="درباره ما" />
+    </group>
+    <item
+        android:id="@+id/actv_home_panel_nav_item_exitApp"
+        android:icon="@drawable/exit_icon"
+        android:title="خروج" />
+</menu>

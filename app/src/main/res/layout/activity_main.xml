@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_page_3"
+    android:layoutDirection="rtl"
+    tools:context="CardNotPresent.Main.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/gradient_2"
+        android:gravity="center"
+        android:layoutDirection="rtl"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/byagutbd"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="@string/welcome_title_main_page"
+            android:textColor="#fff"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.205" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/actv_main_edt_username_id"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:drawableRight="@drawable/user_icon"
+            android:fillColor="#000000"
+            android:gravity="left|center"
+            android:hint="@string/username_mmain_page"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="25"
+            android:padding="5dp"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            app:layout_constraintLeft_toLeftOf="@id/txtTitle"
+            app:layout_constraintRight_toRightOf="@id/txtTitle"
+            app:layout_constraintTop_toBottomOf="@id/txtTitle" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/actv_main_edt_password_id"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:drawableRight="@drawable/password_icon"
+            android:gravity="left|center"
+            android:hint="@string/password_main_page"
+            android:imeOptions="actionDone"
+            android:inputType="numberPassword"
+            android:maxLength="25"
+            android:padding="5dp"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            app:layout_constraintLeft_toLeftOf="@id/actv_main_edt_username_id"
+            app:layout_constraintRight_toRightOf="@id/actv_main_edt_username_id"
+            app:layout_constraintTop_toBottomOf="@id/actv_main_edt_username_id" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/actv_main_btn_enter_portal_id"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:onClick="ACTION_BUTTONS_MAIN"
+            android:backgroundTint="#808F9EAA"
+            android:fontFamily="@font/iranian_sans_light"
+            android:gravity="center"
+            android:text="@string/portal_entrance_title"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:cornerRadius="5dp"
+            app:layout_constraintLeft_toLeftOf="@id/actv_main_edt_password_id"
+            app:layout_constraintRight_toRightOf="@id/actv_main_edt_password_id"
+            app:layout_constraintTop_toBottomOf="@id/actv_main_edt_password_id" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/actv_main_btn_sign_up_id"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#808F9EAA"
+            android:onClick="ACTION_BUTTONS_MAIN"
+            android:fontFamily="@font/iranian_sans_light"
+            android:gravity="center"
+            android:text="@string/portal_sign_up"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:cornerRadius="5dp"
+            app:layout_constraintLeft_toLeftOf="@id/actv_main_btn_enter_portal_id"
+            app:layout_constraintRight_toRightOf="@id/actv_main_btn_enter_portal_id"
+            app:layout_constraintTop_toBottomOf="@id/actv_main_btn_enter_portal_id" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/actv_main_btn_password_recovery_id"
+            android:layout_width="125dp"
+            android:layout_height="45dp"
+            android:backgroundTint="#1361666A"
+            android:onClick="ACTION_BUTTONS_MAIN"
+            android:fontFamily="@font/iranian_sans_light"
+            android:gravity="center"
+            android:text="@string/forget_password"
+            android:textColor="#016BBF"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/actv_main_btn_sign_up_id"
+            app:layout_constraintRight_toRightOf="@id/actv_main_btn_sign_up_id"
+            app:layout_constraintTop_toBottomOf="@id/actv_main_btn_sign_up_id" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

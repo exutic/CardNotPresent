@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:background="@drawable/background_main"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/tv_header_search_persons"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="محصول جدید"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            />
+
+        <Button
+            android:id="@+id/btn_closedialog_addproduct_productlink"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/close_dialog"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/edt_name_addProduct_productlink"
+        style="@style/edt_item_search"
+        android:hint="نام محصول"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:maxLines="1"
+        android:maxLength="30"/>
+
+    <EditText
+        android:id="@+id/edt_code_addProduct_productlink"
+        style="@style/edt_item_search"
+        android:hint="کد محصول"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLines="1"
+        android:maxLength="15"/>
+
+    <EditText
+        android:id="@+id/edt_amount_addProduct_productlink"
+        style="@style/edt_item_search"
+        android:hint="مبلغ (تا سقف پانصد میلیون ریال)"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="11"
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/edt_description_addProduct_productlink"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/round_search"
+        android:textColorHint="#fff"
+        android:textSize="17sp"
+        android:textColor="#9A021546"
+        android:gravity="center_horizontal"
+        android:maxLength="50"
+        android:hint="توضیحات"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:maxLines="3" />
+
+    <Button
+        android:id="@+id/btn_submit_addproduct_productlink"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/round_order_submit_btn"
+        android:text="به لیست اضافه کن"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp" />
+
+</LinearLayout>
